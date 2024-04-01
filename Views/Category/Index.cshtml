@@ -16,7 +16,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var obj in Model)
+        @foreach (var obj in Model.OrderBy(i => i.DisplayOrder)) //use Model with capital M
         {
             <tr>
                 <td>
